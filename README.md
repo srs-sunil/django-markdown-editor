@@ -1,4 +1,24 @@
+
+
+First, create a Python virtual environment:
+
+$ python -m venv venv
+$ echo venv/ >> .gitignore
+$ source venv/bin/activate
+
+echo martor >> requirements.txt
+echo gunicorn >> requirements.txt
+
+pip install -r requirements.txt
+
+git add .gitignore requirements.txt
+git commit -m "added martor and gunicorn"
+git push origin master
+
+
 ## martor [![pypi version][1]][2] [![paypal donation][3]][4]
+
+
 
 [![license][5]][6] [![python version][7]][8] [![django version][9]][10] [![build][11]][12] [![black][18]][19]
 
